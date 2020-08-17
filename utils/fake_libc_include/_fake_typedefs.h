@@ -169,4 +169,8 @@ typedef struct xcb_connection_t xcb_connection_t;
 typedef uint32_t xcb_window_t;
 typedef uint32_t xcb_visualid_t;
 
+typedef struct MirDisplayConfig MirDisplayConfig;
+
+typedef struct regex_t regex_t;
+
 #endif

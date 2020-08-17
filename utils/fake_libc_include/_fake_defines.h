@@ -219,3 +219,13 @@
 #define __m512d_u int
 #define __m512i   int
 #define __m512i_u int
+
+# define __GNUC_PREREQ(maj, min) \
+	((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))
+
+# define __glibc_clang_prereq(maj, min) \
+  ((__clang_major__ << 16) + __clang_minor__ >= ((maj) << 16) + (min))
+
+#define __attribute__(x)
+#define __restrict
+#define __asm__(x)
